@@ -1,0 +1,19 @@
+@import "modern-normalize/modern-normalize.css";
+@import "aos/dist/aos.css";
+@import "variables";
+@import "mixins";
+@import "base";
+@import "card";
+
+body {
+
+    background-color: #f2ebe3;
+
+    // @include breakpoint("large") {
+    //     background-color: blue;
+    // }
+
+    // @include breakpoint("wide") {
+    //     background-color: red;
+    // }
+}

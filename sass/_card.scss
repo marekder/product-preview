@@ -1,0 +1,122 @@
+.product {
+
+    h2 {
+
+        font-family: 'Fraunces', serif;
+    }
+
+    height: 100dvh;
+    width: 100dvw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat',
+    sans-serif;
+
+    &__card {
+
+        width: 550px;
+        height: 350px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        border-radius: 15px;
+        background-color: #fff;
+        margin: 0 10px;
+        padding: 0 10px 0 0;
+
+        @include breakpoint("small") {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, 1fr);
+        }
+
+    }
+
+    &__image {
+
+        width: 100%;
+        height: 100%;
+        border-radius: 15px 0 0 15px;
+        overflow: hidden;
+
+        @include breakpoint("small") {
+            width: 50%;
+            height: 50%;
+
+            overflow: auto;
+        }
+
+
+    }
+
+    &__desc {
+
+        padding: 8%;
+
+    }
+
+    &__title {
+
+        color: gray;
+        font-size: 0.7em;
+        opacity: 0.8;
+        letter-spacing: 5px;
+
+    }
+
+    &__details {
+
+        color: gray;
+        font-size: 0.8em;
+        line-height: 1.7;
+    }
+
+    &__offer {
+
+        display: flex;
+        justify-content: baseline;
+        align-items: center;
+        gap: 5%;
+        padding: 2% 0 2% 0;
+        font-size: 1.2em;
+    }
+
+    &__price {
+
+        font-family: 'Fraunces',
+            serif;
+        color: #3c8067;
+        font-size: 1.3em;
+
+    }
+
+    &__discount {
+
+        font-family: 'Fraunces',
+            serif;
+        color: gray;
+        font-size: 0.7em;
+        text-decoration: line-through;
+
+    }
+
+    &__cart {
+        background-color: #064006;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+        position: relative;
+        margin: 0 auto;
+        translate: 0 30%;
+        width: 80%;
+        height: 13%;
+        border-radius: 10px;
+        // text-align: center;
+        // line-height: 2.8;
+        font-size: 0.8em;
+        color: #fff;
+    }
+}
