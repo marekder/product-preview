@@ -28,6 +28,8 @@ Users should be able to:
 
 ![](/public/images/screenshot.jpg)
 
+![](/public/images/screenshot-mobile.jpg)
+
 ### Links
 
 - Live Site URL: [Product preview](https://marekder.github.io/product-preview/)
